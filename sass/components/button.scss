@@ -1,0 +1,17 @@
+.contact {
+ background: rgb(188, 186, 186);
+ font-size: 1.2em;
+ border-radius: 1em;
+ width: 5em;
+ height: 1.2em;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 10px;
+
+  &:hover{
+background: rgb(174, 157, 157);
+color: aqua;
+transition:ease-in-out 1.5s
+  }
+}

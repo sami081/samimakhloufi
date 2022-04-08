@@ -19,12 +19,23 @@ li {
 
 a {
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(255, 254, 252);
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
 .logo-title {
   width: 2em;
   height: 2em;
+}
+
+.photo {
+  width: 10em;
+  height: 10em;
+  border-radius: 5em;
 }
 
 header {
@@ -69,6 +80,55 @@ header .logo-div p {
   cursor: pointer;
   transform: scale(1.5);
   transition: all 1.5s;
+}
+
+.presentation-section {
+  background: rgb(98, 96, 96);
+  display: flex;
+  justify-content: center;
+  border-radius: 1em;
+  margin: 20px 5px 20px 5px;
+  color: rgb(255, 254, 252);
+  flex-direction: column;
+  align-items: center;
+}
+.presentation-section .presentation-div {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  align-items: center;
+}
+.presentation-section .presentation-div h2 {
+  text-align: center;
+  font-size: 4em;
+}
+.presentation-section .presentation-div .presentation-information {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.presentation-section .presentation-div .presentation-information p {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 1.5em;
+  display: flex;
+}
+
+.contact {
+  background: rgb(188, 186, 186);
+  font-size: 1.2em;
+  border-radius: 1em;
+  width: 5em;
+  height: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.contact:hover {
+  background: rgb(174, 157, 157);
+  color: aqua;
+  transition: ease-in-out 1.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */
