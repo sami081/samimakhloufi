@@ -1,0 +1,25 @@
+.menu {
+  margin-top: 30px;
+display: flex;
+width: 100%;
+justify-content: center;
+ul{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  background: black;
+  border-radius: 1em;
+  height: 2em;
+  align-items: center;
+  li{
+    display: flex;
+    &:hover{
+      cursor:pointer;
+      transform: scale(1.5);
+      transition: all 1.5s;
+    }
+  }
+}
+}
