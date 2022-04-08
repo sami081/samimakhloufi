@@ -1,0 +1,17 @@
+header{
+  display: flex;
+  justify-content: center;
+  
+  .logo-div {
+    display: flex;
+    justify-content: center;
+    background: rgb(98, 96, 96);
+    width: 25em;
+    border-radius: 50%;
+    p {
+      text-align: center;
+    }
+  }
+
+
+}
