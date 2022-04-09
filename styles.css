@@ -180,7 +180,7 @@ header .logo-div p {
   font-size: 1.5em;
   display: flex;
 }
-.presentation-section .presentation-div .presentation-information .contact-span li {
+.presentation-section .presentation-div .presentation-information .contact-span ul {
   display: flex;
   align-items: flex-start;
 }
@@ -212,7 +212,7 @@ header .logo-div p {
     flex-direction: column;
     text-align: center;
   }
-  .presentation-section .presentation-div .presentation-information .contact-span li {
+  .presentation-section .presentation-div .presentation-information .contact-span ul {
     display: flex;
     justify-content: center;
   }
