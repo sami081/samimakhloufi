@@ -2,11 +2,27 @@
   font-family:"kaushan";
   src: url(./ressources/font-family/KaushanScript-Regular.otf);
 }
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  }
+  ::-webkit-scrollbar-track-piece  {
+  background-color:rgb(255, 254, 252);
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: black;
+  -webkit-border-radius: 1ex;
+  }
+  
 body {
   background: rgb(62, 61, 61);
   margin: 0;
   padding: 0;
   min-width: 320px;
+ 
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   font-family: "kaushan";
