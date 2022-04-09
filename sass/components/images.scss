@@ -1,3 +1,16 @@
+@keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg) ;
+      -webkit-transition: all 2s ease-in-out;
+    
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+      -webkit-transition: all 2s ease-in-out;
+    
+  }
+}
+
 .logo-title {
   width: 2em;
   height: 2em;
@@ -6,4 +19,19 @@
   width: 10em;
   height:10em;
   border-radius: 5em;
+}
+
+.logo-phone{
+  width: 1em;
+  height: 1em;
+  -webkit-animation: rotating  2s linear infinite;
+  &:hover{
+    animation-play-state: paused;
+  }
+
+ 
+}
+.social-logo{
+  width: 2em;
+  height: 2em;
 }
