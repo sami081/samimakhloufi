@@ -32,10 +32,16 @@
  
 }
 .social-logo{
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
   -webkit-animation: rotating  3s linear infinite;
   &:hover{
     animation-play-state: paused;
+  }
+}
+@media only screen and (max-width: 750px){
+  .social-logo{
+    width: 2em;
+    height: 2em;
   }
 }

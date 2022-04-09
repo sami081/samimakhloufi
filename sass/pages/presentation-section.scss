@@ -1,39 +1,74 @@
 .presentation-section {
-  
   background: rgb(98, 96, 96);
   display: flex;
   justify-content: center;
   border-radius: 1em;
- margin: 20px 5px 20px 5px ;
- color: rgb(255, 254, 252);
- flex-direction: column;
- align-items: center;
- .presentation-div{
-   display: flex;
-   
-  //  width: 40%;
-   justify-content: space-around;
-   margin: 10px;
-   align-items: center;
-  h2{
-    text-align: center;
-    font-size: 4em;
- 
-  }
-  .presentation-information{
-    padding-left: 10px;
+  margin: 20px 5px 20px 5px;
+  color: rgb(255, 254, 252);
+  flex-direction: column;
+  align-items: center;
+  .presentation-div {
     display: flex;
+
+    //  width: 40%;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+    h2 {
+      text-align: center;
+      font-size: 4em;
+    }
+    .presentation-information {
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      .contact-span {
+        font-size: 1.5em;
+        display: flex;
+        li {display: flex;
+        align-items: flex-start;}
+      }
+      p {
+        margin: 0;
+        // margin-right: 10px;
+        // padding: 10px;
+        font-size: 1.5em;
+        display: flex;
+      }
+    }
+  }
+}
+
+//version mobile
+@media only screen and (max-width: 956px) {
+  .presentation-section {
+    margin: 10px 5px 10px 5px;
     flex-direction: column;
-    p{
+    justify-content: center;
+    .presentation-div {
       margin: 0;
-    margin-right: 10px;
-    // padding: 10px;
-    font-size: 1.5em;
-     display: flex;
-   
-  }}
-  
-  
-  
+      flex-direction: column;
+      .presentation-information {
+        margin: 10px 5px 10px 5px;
+        padding: 0;
+        flex-direction: column;
+        p{
+          // margin: 10px 5px 10px 5px;
+          text-align:center
+        }
+        .contact-span {
+          // margin: 10px 5px 10px 5px;
+          flex-direction: column;
+          text-align: center;
+         
+          li {
+            display: flex;
+             justify-content: center;
+          //  transform: translateY(-27px);
+          
+          }
+        }
+      }
+    }
   }
 }
