@@ -11,7 +11,7 @@
   background-color: rgb(255, 254, 252);
 }
 
-::-webkit-scrollbar-thumb:vertical {
+::-webkit-scrollbar-thumb {
   height: 30px;
   background-color: black;
   -webkit-border-radius: 1ex;
@@ -245,6 +245,8 @@ footer {
   align-self: center;
 }
 footer .social {
+  margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
