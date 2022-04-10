@@ -11,7 +11,7 @@
   background-color: rgb(255, 254, 252);
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
   height: 30px;
   background-color: black;
   -webkit-border-radius: 1ex;
