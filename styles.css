@@ -316,16 +316,21 @@ footer .social {
   border-radius: 1.5em;
   align-items: center;
 }
+.skills .all-skills .soft-skills p {
+  color: rgb(255, 254, 252);
+  margin: 0;
+}
 
 @keyframes moove-top1 {
   0% {
     opacity: 0;
     transition: 400ms;
-    transform: translateY(100px);
+    transform: scale(0) rotate(0deg);
   }
   100% {
     opacity: 1;
     transition: 400ms;
+    transform: scale(1) rotate(360deg);
   }
 }
 @keyframes moove-top-logo {
@@ -343,11 +348,23 @@ footer .social {
   0% {
     opacity: 0;
     transition: 4000ms;
-    transform: translateY(1000px);
+    transform: scale(0) rotate(0deg);
   }
   100% {
     opacity: 1;
     transition: 4000ms;
+    transform: scale(1) rotate(-360deg);
+  }
+}
+@keyframes moove-top-soft {
+  0% {
+    opacity: 0;
+    transition: 1600ms;
+    transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    transition: 1600ms;
   }
 }
 .logo-skill {
@@ -369,6 +386,13 @@ footer .social {
   -moz-animation: moove-top2 3.5s;
   -webkit-animation: moove-top2 3.5s;
   -o-animation: move-top2 3.5s;
+}
+
+.logo-soft {
+  animation: moove-top-soft 2.5s;
+  -moz-animation: moove-top-soft 2.5s;
+  -webkit-animation: moove-top-soft 2.5s;
+  -o-animation: move-top-soft 2.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */
