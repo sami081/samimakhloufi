@@ -1,0 +1,34 @@
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .all-skills{
+    margin: 10px 0 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  
+  .technical-skills{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(98, 96, 96);
+    border-radius: 1.5em;
+    align-items: center;
+    .all-logo{
+      margin: 10px 0 10px 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+  .soft-skills{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(98, 96, 96);
+    border-radius: 1.5em;
+    align-items: center;
+  }
+}
+}
