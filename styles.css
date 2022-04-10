@@ -11,7 +11,7 @@
   background-color: rgb(255, 254, 252);
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
   height: 30px;
   background-color: black;
   -webkit-border-radius: 1ex;
@@ -29,6 +29,7 @@ body {
 h1 {
   font-family: "kaushan";
   margin: 0;
+  font-size: 2.5em;
 }
 
 li {
@@ -44,7 +45,19 @@ a {
 
 h2 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em;
+  color: rgb(255, 254, 252);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: rgb(255, 254, 252);
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.5em;
   color: rgb(255, 254, 252);
 }
 
@@ -87,6 +100,12 @@ h2 {
   animation-play-state: paused;
 }
 
+.logo-skill {
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+}
+
 @media only screen and (max-width: 750px) {
   .social-logo {
     width: 2em;
@@ -103,7 +122,7 @@ header .logo-div {
   justify-content: center;
   background: rgb(98, 96, 96);
   width: 25em;
-  height: 10em;
+  height: 15em;
   align-items: center;
   border-radius: 50%;
 }
@@ -123,7 +142,7 @@ header .logo-div p {
 }
 .menu ul {
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
@@ -262,6 +281,94 @@ footer .social {
   width: 90%;
   height: 500px;
   border-radius: 1.5em;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .all-skills {
+  margin: 10px 0 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.skills .all-skills .technical-skills {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(98, 96, 96);
+  border-radius: 1.5em;
+  align-items: center;
+}
+.skills .all-skills .technical-skills .all-logo {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.skills .all-skills .soft-skills {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(98, 96, 96);
+  border-radius: 1.5em;
+  align-items: center;
+}
+
+@keyframes moove-top1 {
+  0% {
+    opacity: 0;
+    transition: 400ms;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transition: 400ms;
+  }
+}
+@keyframes moove-top-logo {
+  0% {
+    opacity: 0;
+    transition: 1600ms;
+    transform: translateY(-2000px);
+  }
+  100% {
+    opacity: 1;
+    transition: 1600ms;
+  }
+}
+@keyframes moove-top2 {
+  0% {
+    opacity: 0;
+    transition: 4000ms;
+    transform: translateY(1000px);
+  }
+  100% {
+    opacity: 1;
+    transition: 4000ms;
+  }
+}
+.logo-skill {
+  animation: moove-top-logo 2.5s;
+  -moz-animation: moove-top-logo 2.5s;
+  -webkit-animation: moove-top-logo 2.5s;
+  -o-animation: move-top-logo 2.5s;
+}
+
+.technical-skills {
+  animation: moove-top1 2.5s;
+  -moz-animation: moove-top1 2.5s;
+  -webkit-animation: moove-top1 2.5s;
+  -o-animation: move-top1 2.5s;
+}
+
+.soft-skills {
+  animation: moove-top2 3.5s;
+  -moz-animation: moove-top2 3.5s;
+  -webkit-animation: moove-top2 3.5s;
+  -o-animation: move-top2 3.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */

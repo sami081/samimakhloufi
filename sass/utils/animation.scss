@@ -1,0 +1,51 @@
+@keyframes moove-top1{
+  0% {
+    opacity: 0;
+    transition: 400ms;
+    transform: translateY(100px);
+}
+100% {
+    opacity: 1;
+    transition: 400ms;
+}
+}
+@keyframes moove-top-logo{
+  0% {
+    opacity: 0;
+    transition: 1600ms;
+    transform: translateY(-2000px);
+}
+100% {
+    opacity: 1;
+    transition: 1600ms;
+}
+}
+@keyframes moove-top2{
+  0% {
+    opacity: 0;
+    transition: 4000ms;
+    transform: translateY(1000px);
+}
+100% {
+    opacity: 1;
+    transition: 4000ms;
+}
+}
+.logo-skill {
+  animation: moove-top-logo 2.5s;
+    -moz-animation: moove-top-logo 2.5s;
+    -webkit-animation: moove-top-logo 2.5s;
+    -o-animation: move-top-logo 2.5s;
+}
+.technical-skills {
+  animation: moove-top1 2.5s;
+    -moz-animation: moove-top1 2.5s;
+    -webkit-animation: moove-top1 2.5s;
+    -o-animation: move-top1 2.5s;
+}
+.soft-skills {
+  animation: moove-top2 3.5s;
+    -moz-animation: moove-top2 3.5s;
+    -webkit-animation: moove-top2 3.5s;
+    -o-animation: move-top2 3.5s;
+}

@@ -39,6 +39,11 @@
     animation-play-state: paused;
   }
 }
+.logo-skill {
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+}
 @media only screen and (max-width: 750px){
   .social-logo{
     width: 2em;
