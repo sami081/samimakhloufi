@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  font-family: "kaushan";
+  font-family: "kaushan" Arial, Helvetica, sans-serif;
   margin: 0;
   font-size: 2.5em;
 }
@@ -41,7 +41,7 @@ a {
   color: rgb(255, 254, 252);
   display: flex;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 h2 {
@@ -65,9 +65,10 @@ h4 {
 p {
   color: rgb(255, 254, 252);
   font-size: 1.5em;
+  margin: 0;
 }
 
-@media only screen and (max-width: 352px) {
+@media only screen and (max-width: 366px) {
   h1 {
     font-size: 2.1em;
   }
@@ -291,7 +292,7 @@ header .logo-div p {
 }
 
 footer {
-  width: 97%;
+  width: 99%;
   margin-top: 20px;
   border-radius: 1em;
   background: black;
@@ -397,7 +398,7 @@ footer .social {
   }
   .all-skills .soft-skills .logo-soft {
     height: 30px !important;
-    width: 100% !important;
+    width: 70% !important;
   }
 }
 @keyframes moove-top1 {
@@ -510,6 +511,51 @@ footer .social {
     -webkit-animation: moove-right 3.5s;
     -o-animation: move-right 3.5s;
   }
+}
+.web {
+  height: 2000px;
+  align-self: center;
+  width: 97%;
+  margin: 20px 0 20px 0;
+  background: rgb(98, 96, 96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5em;
+}
+.web .all-sites {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+.web .all-sites .site {
+  background: black;
+  width: 35%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5em;
+}
+.web .all-sites .site a {
+  height: 85%;
+  width: 100%;
+}
+.web .all-sites .site a img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.1em 1.1em 0 0;
+  object-fit: cover;
+}
+.web .all-sites .site .information-site {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
