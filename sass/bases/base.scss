@@ -25,7 +25,7 @@ body {
   flex-direction: column;
 }
 h1 {
-  font-family: "kaushan";
+  font-family: "kaushan" Arial, Helvetica, sans-serif;
   margin: 0;
   font-size: 2.5em;
 
@@ -39,7 +39,7 @@ a {
   color: rgb(255, 254, 252);
   display: flex;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 h2 {
   margin: 0;
@@ -59,10 +59,11 @@ h4 {
 p{
   color: rgb(255, 254, 252);
   font-size: 1.5em;
+  margin: 0;
 }
 
 //version mobile
-@media only screen and (max-width: 352px){
+@media only screen and (max-width: 366px){
 h1 {
   font-size: 2.1em;
 }
