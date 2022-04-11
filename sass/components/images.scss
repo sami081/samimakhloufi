@@ -44,9 +44,14 @@
   height: 5em;
   border-radius: 100%;
 }
+
 @media only screen and (max-width: 750px){
   .social-logo{
     width: 2em;
     height: 2em;
+  }
+  .logo-skill{
+    width: 3em !important;
+    height: 3em !important;
   }
 }
