@@ -447,6 +447,61 @@ footer .social {
     transition: 1600ms;
   }
 }
+@keyframes site {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    transition: 500ms;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transition: 500ms;
+  }
+}
+@keyframes first {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes second {
+  0% {
+    transition: 600ms;
+    transform: translateX(-2000px);
+  }
+  100% {
+    transition: 600ms;
+  }
+}
+@keyframes third {
+  0% {
+    transition: 800ms;
+    transform: translateX(-4000px);
+  }
+  100% {
+    transition: 800ms;
+  }
+}
+.load-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+  background-image: linear-gradient(#000000 40%, #3b3b3c 60%);
+  width: 100%;
+  height: 100%;
+  animation: first 5s linear forwards;
+  -moz-animation: first 5s linear forwards;
+  -webkit-animation: first 5s linear forwards;
+  -o-animation: first 5s linear forwards;
+  pointer-events: none;
+}
+
 .logo-skill {
   animation: moove-top-logo 2.5s;
   -moz-animation: moove-top-logo 2.5s;
@@ -473,6 +528,41 @@ footer .social {
   -moz-animation: moove-top-soft 3.5s;
   -webkit-animation: moove-top-soft 3.5s;
   -o-animation: move-top-soft 3.5s;
+}
+
+.reservia {
+  animation: site 1.5s;
+  -moz-animation: site 1.5s;
+  -webkit-animation: site 1.5s;
+  -o-animation: site 1.5s;
+}
+
+.ohmyfood {
+  animation: site 2s;
+  -moz-animation: site 2s;
+  -webkit-animation: site 2s;
+  -o-animation: site 2s;
+}
+
+.burst-bubble {
+  animation: site 2.5s;
+  -moz-animation: site 2.5s;
+  -webkit-animation: site 2.5s;
+  -o-animation: site 2.5s;
+}
+
+.la-chouette-agence {
+  animation: site 3s;
+  -moz-animation: site 3s;
+  -webkit-animation: site 3s;
+  -o-animation: site 3s;
+}
+
+.crazy-grill {
+  animation: site 3.5s;
+  -moz-animation: site 3.5s;
+  -webkit-animation: site 3.5s;
+  -o-animation: site 3.5s;
 }
 
 @media only screen and (max-width: 750px) {
@@ -513,7 +603,7 @@ footer .social {
   }
 }
 .web {
-  height: 2000px;
+  height: 1700px;
   align-self: center;
   width: 97%;
   margin: 20px 0 20px 0;
@@ -523,8 +613,13 @@ footer .social {
   align-items: center;
   border-radius: 1.5em;
 }
+.web h2 {
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
 .web .all-sites {
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -556,6 +651,65 @@ footer .social {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .web {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .web .all-sites {
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .web .all-sites .site {
+    flex-direction: row;
+    width: 99%;
+    height: 150px;
+  }
+  .web .all-sites .site a {
+    height: 100%;
+    width: 60%;
+  }
+  .web .all-sites .site a img {
+    border-radius: 1em 0 0 1.1em;
+  }
+  .web .all-sites .site .information-site {
+    height: 100%;
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  .web .all-sites .site .information-site h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .web .all-sites .site .information-site p {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1000px) {
+  .web {
+    height: 800px !important;
+  }
+  .web .site {
+    height: 200px !important;
+    width: 45% !important;
+  }
+  .web .site a {
+    height: 70% !important;
+  }
+  .web .site .information-site {
+    height: 30% !important;
+  }
+  .web .site .information-site h3 {
+    font-size: 1.6em !important;
+  }
+  .web .site .information-site p {
+    font-size: 1.2em !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

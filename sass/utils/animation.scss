@@ -44,6 +44,65 @@
     transition: 1600ms;
 }
 }
+@keyframes site {
+  0%{
+opacity: 0;
+transform: scale(0);
+transition: 500ms;
+  }
+  100% {
+opacity: 1;
+transform: scale(1);
+transition: 500ms;
+  }
+}
+@keyframes first {
+  0% {
+    opacity: 1;
+    // transition:  5000ms;
+  }
+  100% {
+    opacity: 0;
+    // transition: 15000ms;
+  }
+  
+}
+@keyframes second {
+  0% {
+    transition: 600ms;
+    transform: translateX(-2000px);
+  }
+  100%{
+    transition: 600ms;
+   
+  }}
+  @keyframes third {
+    0% {
+      transition: 800ms;
+      transform: translateX(-4000px);
+    }
+    100%{
+      transition: 800ms;
+     
+    }
+  
+}
+.load-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+  background-image: linear-gradient(#000000 40%, #3b3b3c 60%);
+  width: 100%;
+  height: 100%;
+  animation: first 5s linear forwards ;
+  -moz-animation: first 5s linear forwards;
+  -webkit-animation: first 5s linear forwards;
+  -o-animation: first 5s linear forwards;
+  pointer-events: none;
+}
 .logo-skill {
   animation: moove-top-logo 2.5s;
     -moz-animation: moove-top-logo 2.5s;
@@ -67,6 +126,37 @@
   -moz-animation: moove-top-soft 3.5s;
   -webkit-animation: moove-top-soft 3.5s;
   -o-animation: move-top-soft 3.5s;
+}
+.reservia {
+  animation:site 1.5s;
+  -moz-animation: site 1.5s;
+  -webkit-animation: site 1.5s;
+  -o-animation: site 1.5s;
+}
+.ohmyfood {
+  animation:site 2s;
+  -moz-animation: site 2s;
+  -webkit-animation: site 2s;
+  -o-animation: site 2s;
+}
+.burst-bubble{
+  animation:site 2.5s;
+  -moz-animation: site 2.5s;
+  -webkit-animation: site 2.5s;
+  -o-animation: site 2.5s;
+}
+.la-chouette-agence {
+  animation:site 3s;
+  -moz-animation: site 3s;
+  -webkit-animation: site 3s;
+  -o-animation: site 3s;
+}
+.crazy-grill{
+  animation:site 3.5s;
+  -moz-animation: site 3.5s;
+  -webkit-animation: site 3.5s;
+  -o-animation: site 3.5s;
+
 }
 @media only screen and (max-width: 750px){
   @keyframes moove-left {
