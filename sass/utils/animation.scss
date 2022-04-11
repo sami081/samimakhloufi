@@ -63,8 +63,46 @@
     -o-animation: move-top2 3.5s;
 }
 .logo-soft{
-  animation: moove-top-soft 2.5s;
-  -moz-animation: moove-top-soft 2.5s;
-  -webkit-animation: moove-top-soft 2.5s;
-  -o-animation: move-top-soft 2.5s;
+  animation: moove-top-soft 3.5s;
+  -moz-animation: moove-top-soft 3.5s;
+  -webkit-animation: moove-top-soft 3.5s;
+  -o-animation: move-top-soft 3.5s;
+}
+@media only screen and (max-width: 750px){
+  @keyframes moove-left {
+    0%{
+      opacity: 0;
+      transition: 1600ms;
+      transform: translateX(-2000px);
+    }
+    100% {
+      opacity: 1;
+      transition: 1600ms;
+  }
+    
+  }
+  .technical-skills {
+    animation: moove-left 2.5s;
+      -moz-animation: moove-left 2.5s;
+      -webkit-animation: moove-left 2.5s;
+      -o-animation: move-left 2.5s;
+  }
+  @keyframes moove-right {
+    0%{
+      opacity: 0;
+      transition: 1600ms;
+      transform: translateX(2000px);
+    }
+    100% {
+      opacity: 1;
+      transition: 1600ms;
+  }
+    
+  }
+  .soft-skills{
+    animation: moove-right 3.5s;
+    -moz-animation: moove-right 3.5s;
+    -webkit-animation: moove-right 3.5s;
+    -o-animation: move-right 3.5s;
+  }
 }
