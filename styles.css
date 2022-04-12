@@ -2,6 +2,10 @@
   font-family: "kaushan";
   src: url(./ressources/font-family/KaushanScript-Regular.otf);
 }
+@font-face {
+  font-family: "cooper";
+  src: url(./ressources/font-family/CooperHewitt-Heavy.otf);
+}
 ::-webkit-scrollbar {
   width: 15px;
   height: 15px;
@@ -11,13 +15,14 @@
   background-color: rgb(255, 254, 252);
 }
 
-::-webkit-scrollbar-thumb:vertical {
+::-webkit-scrollbar-thumb {
   height: 30px;
   background-color: black;
   -webkit-border-radius: 1ex;
 }
 
 body {
+  font-family: "cooper", "Arial", "Helvetica", "sans-serif";
   background: rgb(62, 61, 61);
   margin: 0;
   padding: 0;
@@ -27,7 +32,7 @@ body {
 }
 
 h1 {
-  font-family: "kaushan" Arial, Helvetica, sans-serif;
+  font-family: "kaushan";
   margin: 0;
   font-size: 2.5em;
 }
