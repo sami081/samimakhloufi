@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-  font-family: "kaushan";
+  font-family: "kaushan", "Arial", "Helvetica", "sans-serif";
   margin: 0;
   font-size: 2.5em;
 }
@@ -384,7 +384,7 @@ footer .social {
   width: 70%;
   align-items: center;
 }
-.skills .all-skills .soft-skills .all-logo .logo-soft .information p {
+.skills .all-skills .soft-skills .all-logo .logo-soft .information h4 {
   margin: 0;
 }
 
